@@ -1,0 +1,62 @@
+There are four ways to associate styles with your HTML document. Most
+commonly used methods are inline CSS and External CSS.
+
+1.Embedded CSS -The <style> Element
+You can put your CSS rules into an HTML document using the <style> element.
+This tag is placed inside the <head>...</head> tags. Rules defined using this
+syntax will be applied to all the elements available in the document. Here is the
+generic syntax:
+<head>
+<style type="text/css" media="...> 
+Style Rules
+............
+</style>
+</head>
+type----Specifies the style sheet language as a content-type (MIME type). This is a required attribute.
+media----Specifies the device, the document will be displayed on. Default value is all. This is an optional attribute.
+
+2.Inline CSS -The style Attribute
+You can use style attribute of any HTML element to define style rules. These
+rules will be applied to that element only. Here is the generic syntax:
+<element style="...style rules....">
+<h1 style ="color:#36C;"> This is inline CSS </h1>
+
+3.External CSS -The <link> Element
+The <link> element can be used to include an external stylesheet file in your
+HTML document.
+An external style sheet is a separate text file with .css extension. You define all
+the Style rules within this text file and then you can include this file in any HTML
+document using <link> element.
+Here is the generic syntax of including external CSS file:
+<head>
+<link rel="stylesheet" href="..." media="..." />
+</head>
+<head>
+<link rel="stylesheet" href="mystyle.css" media="all" />
+</head>
+
+4.Imported CSS -@import Rule
+@import is used to import an external stylesheet in a manner similar to the
+<link> element. Here is the generic syntax of @import rule.
+<head>
+<@import "URL";
+</head>
+CSS Rules Overriding
+We have discussed four ways to include style sheet rules in an HTML document.
+Here is the rule to override any Style Sheet Rule.
+1.Any inline style sheet takes the highest priority. So, it will override any
+rule defined in <style>...</style> tags or the rules defined in any
+external style sheet file.
+2. Any rule defined in <style>...</style> tags will override the rules defined
+in any external style sheet file.
+3. Any rule defined in the external style sheet file takes the lowest priority,
+and the rules defined in this file will be applied only when the above two
+rules are not applicable.
+
+************CSS Comments*******
+
+Many times, you may need to put additional comments in your style sheet
+blocks. So, it is very easy to comment any part in the style sheet. You can
+simply put your comments inside /*.....this is a comment in style sheet.....*/.
+
+

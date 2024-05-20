@@ -1,0 +1,8 @@
+Format Syntax Example
+Hex Code #RRGGBB p{color:#FF0000;}
+Short Hex
+Code
+#RGB p{color:#6A7;}
+RGB % rgb(rrr%,ggg%,bbb%) p{color:rgb(50%,50%,50%);}
+RGB Absolute rgb(rrr,ggg,bbb) p{color:rgb(0,0,255);}
+keyword aqua, black, etc. p{color:teal;
